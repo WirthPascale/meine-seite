@@ -10,8 +10,9 @@
         min-height: 100vh;
         background-color: #7CFC00; /* Leuchtgrün */
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
       }
 
       h1 {
@@ -19,10 +20,33 @@
         font-family: Arial, sans-serif;
         text-align: center;
         padding: 1rem;
+        margin: 0;
+      }
+
+      .box-row {
+        display: flex;
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+
+      .box {
+        background-color: blue;
+        color: red;
+        padding: 1.5rem 2rem;
+        border-radius: 0.75rem;
+        min-width: 180px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 1.1rem;
       }
     </style>
   </head>
   <body>
     <h1>Die schlechteste Lebensmittel für Katzen</h1>
+    <div class="box-row">
+      <div class="box">Schokolade</div>
+      <div class="box">Alkohol</div>
+      <div class="box">Koffein</div>
+    </div>
   </body>
 </html>
